@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('agencies', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('name', 10);
-            $table->string('location', 32);
+            $table->string('name', 64);
+            $table->string('location', 64);
             $table->integer('trains_fleet');
         });
     }
