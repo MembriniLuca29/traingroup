@@ -10,5 +10,7 @@ Homepage
 <h1>
     Homepage
 </h1>
-
+<button>
+    <a href="/agencies">Agenzie</a>
+</button>
 @endsection
