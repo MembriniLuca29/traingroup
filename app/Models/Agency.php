@@ -10,4 +10,9 @@ class Agency extends Model
     use HasFactory;
 
     protected $table = 'agencies';
+
+    public function index() {
+
+        return view('agencies');
+    }
 }

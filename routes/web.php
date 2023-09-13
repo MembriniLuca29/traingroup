@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\AgencyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,5 @@ Route::get('/', function () {
     return view('home');
 
 });
+
+Route::get('/agencies', [AgencyController::class, 'index']);
