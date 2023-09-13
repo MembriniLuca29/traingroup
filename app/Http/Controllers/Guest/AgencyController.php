@@ -4,10 +4,15 @@ namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Agency;
 
 class AgencyController extends Controller
 {
+
     public function index() {
-        return view('agencies');
+
+        $agencies = Agency::select('*');
+
+        return view('agencies', compact('agencies'));
     }
 }
