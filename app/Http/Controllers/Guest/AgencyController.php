@@ -11,7 +11,7 @@ class AgencyController extends Controller
 
     public function index() {
 
-        $agencies = Agency::select('*');
+        $agencies = Agency::select('*')->get();
 
         return view('agencies', compact('agencies'));
     }
