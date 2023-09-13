@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Guest\StationsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    return view('home', $data);
+    return view('home');
 
 });
+
+Route::get('stations', [StationsController::class, 'index'])->name('stations');

@@ -11,4 +11,10 @@ Homepage
     Homepage
 </h1>
 
+<button>
+    <a href="{{ route('stations') }}">
+        Stations! (bottone bellixximo)
+    </a>
+</button>
+
 @endsection
