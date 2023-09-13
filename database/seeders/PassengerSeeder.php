@@ -18,15 +18,15 @@ class PassengerSeeder extends Seeder
     {
         Passenger::truncate();
         for ($i = 0; $i < 100; $i++){
-            $fakeTrain = new Passenger();
-            $fakeTrain->nome = fake()->words(1, true);
-            $fakeTrain->cognome = fake()->words(1, true);
-            $fakeTrain->stazione_entrata = fake()->words(1, true);
-            $fakeTrain->stazione_uscita = fake()->words(1, true);
-            $fakeTrain->giorno_di_partenza = fake()->dateTime();
-            $fakeTrain->numero_posto = rand(1, 300);           
+            $fakePassenger = new Passenger();
+            $fakePassenger->nome = fake()->words(1, true);
+            $fakePassenger->cognome = fake()->words(1, true);
+            $fakePassenger->stazione_entrata = fake()->words(1, true);
+            $fakePassenger->stazione_uscita = fake()->words(1, true);
+            $fakePassenger->giorno_di_partenza = fake()->dateTime();
+            $fakePassenger->numero_posto = rand(1, 300);           
             
-            $fakeTrain->save();
+            $fakePassenger->save();
             
             
     }
