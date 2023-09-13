@@ -13,6 +13,8 @@ class StationsTableSeeder extends Seeder
      */
     public function run(): void
     {
+        Station::truncate();
+        
         for ($i=0; $i < 10; $i++) { 
             
             $station = new Station();
