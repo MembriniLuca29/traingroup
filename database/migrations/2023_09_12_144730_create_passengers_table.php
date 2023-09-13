@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('trains', function (Blueprint $table) {
+        Schema::create('passengers', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 32);
             $table->string('cognome', 64);

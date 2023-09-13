@@ -4,17 +4,11 @@ namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
-//models
 use App\Models\Passenger;
 
-
-class PassengerController extends Controller{
-    public function index()
-    {
+class PassengerController extends Controller {
+    public function index() {
         $passengers = Passenger::all();
-
-        return view('home', compact('passengers'));
+        // return view('passengers.index', compact('passengers'));
     }
-    
 }

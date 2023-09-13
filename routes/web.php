@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Passenger;
 
 Route::get('/passengers', function () {
-    $trains = Passenger::all();
+    $passengers = Passenger::all();
     dd($passengers); 
 })->name('passengers.index');
 

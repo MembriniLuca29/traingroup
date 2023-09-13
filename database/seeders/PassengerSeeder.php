@@ -28,7 +28,6 @@ class PassengerSeeder extends Seeder
             
             $fakePassenger->save();
             
-            
     }
 }
 }
